@@ -26,18 +26,4 @@ class Document
     @doc.xpath("//*").map(&:name)
   end
 
-  def formatted
-    clone = @doc.clone
-    list = tag_names.uniq
-    list.delete("html")
-    span_nodes = clone.css "span"
-    span_nodes.wrap("<span class=\"highlight pre\"></span>")
-    list.delete("span")
-    list.each do |tag_name|
-      nodes = clone.css tag_name
-      nodes.wrap("<span class=\"highlight #{tag_name}\"></span>")
-    end
-    clone.to_s
-  end
-
 end

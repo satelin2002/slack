@@ -64,7 +64,6 @@ class App < Sinatra::Base
     document = Document.new(@url)
     {
       url: @url,
-      formatted: document.formatted,
       source: document.source,
       tagCount: document.tag_count
     }.to_json
