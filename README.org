@@ -1,20 +1,16 @@
-* Skeleton Sinatra App
+Slack Application Engineer Exercise
 
-This is a sinatra app that follows some conventions that I like to use
-when building web applications. It's optimised for database-backed web
-apps rather than APIs, and as such features:
+Requirements
+ruby 2.1.2
 
-- Twitter bootstrap
-- jquery
-- Capybara for acceptance testing
-- Minitest
-- Application config in =config/settings.yml=
+1. Clone the repository into slack directory
 
-** Todo
+2. Execute
 
-Things I want to add:
+bundle install
 
-- Datamapper for persistence
-- A pry-based console
-- Authentication (using omniauth?) and a user model.
+3. Start thin server
 
+bundle exec thin start -D
+
+4. Hit http://localhost:3000/
