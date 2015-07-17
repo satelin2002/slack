@@ -1,1 +1,35 @@
-<h1>Hello World!</h1>
+<div class="row">
+  <div class="large-6 columns">
+    <form id="application">
+      <div class="row collapse">
+        <div class="small-9 columns">
+          <input
+            name="url"
+            type="text"
+            class="error"
+            placeholder="Enter your URL...">
+          <small class="error"></small>
+        </div>
+        <div class="small-3 columns">
+          <input type="submit" class="button postfix submit" value="Fetch HTML"></input>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="row">
+	<hr />
+  <div class="source large-9 columns">
+    <p class="heading">HTML Source&nbsp;&mdash;&nbsp;<span id="urid"></span></p>
+		<div id="html">
+    </div>
+		<p data-bind="text: fetchErrorMessage"></p>
+	</div>
+	<div class="summary large-3 columns">
+		<p class="heading">Summary</p>
+    <ul id="tagCount">
+    </ul>
+	</div>
+</div>

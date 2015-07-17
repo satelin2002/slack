@@ -1,7 +1,0 @@
-production:
-
-development:
-  databaseurl: 'sqlite:///test.db'
-
-test:
-
